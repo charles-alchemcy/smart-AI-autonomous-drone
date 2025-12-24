@@ -33,7 +33,6 @@ class Capture:
     
     def read(self):
         return self.frameQue.get()
-       
-    
+           
     def release(self):
         self.cap.release()
