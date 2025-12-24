@@ -17,7 +17,7 @@ class Capture:
         
     def stopCaptureThread(self):
         self.framCapFlag = 1
-        self.camThread.join()
+        self.camThread.join(1)
 
     def _reader(self):
         while True:
