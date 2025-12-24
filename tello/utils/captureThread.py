@@ -9,7 +9,6 @@ class Capture:
         self.frameQue = queue.Queue()
         self.framCapFlag = 1
 
-
     def startCaptureThread(self):
         self.camThread = threading.Thread(target=self._reader)
         self.camThread.daemon = True
